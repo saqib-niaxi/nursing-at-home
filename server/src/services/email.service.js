@@ -15,7 +15,7 @@ function createTransporter() {
 export async function sendAdminAlert(data) {
   const transporter = createTransporter()
   await transporter.sendMail({
-    from:    `"CareHome Bookings" <${process.env.SMTP_USER}>`,
+    from:    `"HomeCare Bookings" <${process.env.SMTP_USER}>`,
     to:      process.env.ADMIN_EMAIL || process.env.SMTP_USER,
     subject: `New Booking Request — ${data.service} from ${data.name}`,
     html: `
@@ -50,7 +50,7 @@ export async function sendAdminAlert(data) {
 export async function sendUserConfirmation(data) {
   const transporter = createTransporter()
   await transporter.sendMail({
-    from:    `"CareHome" <${process.env.SMTP_USER}>`,
+    from:    `"HomeCare" <${process.env.SMTP_USER}>`,
     to:      data.email,
     subject: `Booking Confirmed — ${data.service} on ${data.date}`,
     html: `
@@ -62,7 +62,7 @@ export async function sendUserConfirmation(data) {
 
         <p style="color: #374151; font-size: 16px; line-height: 1.6; margin-bottom: 24px;">
           Hi <strong>${data.name}</strong>,<br><br>
-          Thank you for booking with CareHome. We've received your request and our care coordinator will be in touch shortly to confirm your appointment details.
+          Thank you for booking with HomeCare. We've received your request and our care coordinator will be in touch shortly to confirm your appointment details.
         </p>
 
         <div style="background: white; border-radius: 12px; padding: 20px; border: 1px solid #E5E7EB; margin-bottom: 24px;">
@@ -77,7 +77,7 @@ export async function sendUserConfirmation(data) {
         </p>
 
         <div style="margin-top: 32px; padding-top: 20px; border-top: 1px solid #E5E7EB; text-align: center; color: #9CA3AF; font-size: 12px;">
-          © ${new Date().getFullYear()} CareHome — Premium Nursing At Home
+          © ${new Date().getFullYear()} HomeCare — Premium Nursing At Home
         </div>
       </div>
     `,

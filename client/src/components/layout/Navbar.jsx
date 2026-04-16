@@ -38,7 +38,7 @@ export function Navbar() {
               <Heart className="w-5 h-5 text-white" fill="currentColor" />
             </div>
             <span className="font-heading font-bold text-gray-900 text-lg">
-              Care<span className="text-violet-600">Home</span>
+              Home<span className="text-violet-600">Care</span>
             </span>
           </Link>
 

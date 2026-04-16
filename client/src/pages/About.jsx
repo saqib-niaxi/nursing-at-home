@@ -11,7 +11,7 @@ const team = [
 ]
 
 const milestones = [
-  { year: '2019', title: 'Founded',             desc: 'CareHome started with 10 nurses and a big dream — premium care, at home.' },
+  { year: '2019', title: 'Founded',             desc: 'HomeCare started with 10 nurses and a big dream — premium care, at home.' },
   { year: '2020', title: 'First 1,000 Patients', desc: 'Grew rapidly as home care demand surged during the pandemic.' },
   { year: '2021', title: '15 Cities',            desc: 'Expanded to major metro areas with 200+ verified nurses on the platform.' },
   { year: '2022', title: 'Award-Winning',        desc: 'Recognized as "Best Home Healthcare Platform" by HealthTech Review.' },
@@ -39,7 +39,7 @@ export default function About() {
                 Care that feels like family
               </motion.h1>
               <motion.p variants={fadeUp} className="section-subtitle mb-6">
-                CareHome was founded on a simple belief: everyone deserves professional nursing care in the comfort of their own home — without the complexity, waiting rooms, or hospital anxiety.
+                HomeCare was founded on a simple belief: everyone deserves professional nursing care in the comfort of their own home — without the complexity, waiting rooms, or hospital anxiety.
               </motion.p>
               <motion.p variants={fadeUp} className="text-gray-500 leading-relaxed">
                 We built a platform that connects families with the most qualified, compassionate nurses — verified, insured, and available 24/7. From post-op recovery to elder care, we're making premium home healthcare the new standard.

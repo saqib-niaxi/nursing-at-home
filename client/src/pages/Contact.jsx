@@ -28,7 +28,7 @@ const services = [
 
 const contactInfo = [
   { icon: Phone,         label: 'Phone',    value: '+92 320 2067666', href: 'tel:+923202067666' },
-  { icon: Mail,          label: 'Email',    value: 'hello@carehome.com', href: 'mailto:hello@carehome.com' },
+  { icon: Mail,          label: 'Email',    value: 'hello@homecare.com', href: 'mailto:hello@homecare.com' },
   { icon: MessageCircle, label: 'WhatsApp', value: '+92 320 2067666', href: 'https://wa.me/923202067666' },
   { icon: MapPin,        label: 'Office',   value: '123 Healthcare Blvd, New York, NY 10001', href: '#' },
 ]
